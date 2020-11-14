@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+		<script type="text/javascript">
+			function sliderInput(){
+			var v = $('#dan').val();
+			$('a').text(v+'show dan');
+			$('a').attr('href','ss?dan='+v);
+			}
+		</script>
+	</head>
+	<body>
+		<p>
+			<a href = "ss?dan=7"> show dan</a>
+		</p>
+		<p>	
+			<input id ="dan" type="range" value="1" min="1" max="9" oninput="sliderInput();">
+		</p>
+	</body>
+</html>
